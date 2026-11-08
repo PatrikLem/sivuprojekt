@@ -12,9 +12,17 @@ header {
     gap: 60px;
     border-bottom: 1px solid #ccc;
 }
+
+.logo{
+    display: block;
+}
+.logo image{
+    display: block;
+}
+
 nav{
     display: flex;
-    gap: 10px
+    gap: 40px
 }
 
 nav a {
@@ -44,6 +52,27 @@ nav a:hover {
     color:#ccc
 }
 
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    font-size:20px;
+    font-family: Helvetica, arial;
+    text-align: center;
+}
+
 footer {
-    border-top: 1px solid #ccc
+    border-top: 1px solid #ccc;
+    text-align: left;
+}
+
+.copy{
+    font-size: 12px;
+    text-align: left;
 }
