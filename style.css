@@ -110,7 +110,26 @@ p{
 
 footer {
     border-top: 1px solid #ccc;
+    padding-right: 80px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contact{
     text-align: left;
+}
+
+.footer-contact-title{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.footer-contact-text{
+    font-size: 12px;
 }
 
 .copy{
