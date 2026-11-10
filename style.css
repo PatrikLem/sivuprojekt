@@ -1,10 +1,7 @@
-body{
-    margin: 0;
-    font-family: Helvetica, Arial
-}
+
 
 .navigation {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -124,10 +121,19 @@ body{
 
 body {
     margin-top: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+main{
+    max-width: none;
+    padding: 40px 80px;   
+    margin: 0; 
 }
 
 .hero {
-    min-height: 80vh;
+    min-height: 95vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,32 +147,83 @@ body {
     animation: heroBackground 20s infinite ease-in-out;
 }
 
+
+
 @keyframes heroBackground {
     0%, 100% {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu1.png');
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu7.jpg');
     }
     33% {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu2.png');
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu9.jpg');
     }
     66% {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu3.png');
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/riggtech.png');
     }
+}
+
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+.main-text{
+    flex: 1 1 320px;
+    color: #333;
+}
+
+.main-text .head{
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 600;
+    color: #2f8f8b;
+    margin: 0 0 16px;
+}
+
+.main-text .mid{
+    line-height: 1.7;
+    max-width: 60ch;
+    margin: 0 0 16px;
+    font-size: 1.2rem;
+    color: #1f1f1f;
+}
+
+.main-text .list{
+    padding-left: 20px;
+    margin: 0 0 16px;
+    line-height: 1.8;
+}
+
+.main-text .list li::marker{
+    color: #2f8f8b;
+}
+
+.main-picture{
+    flex: 1 1 200px;
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
 }
 
 h1{
     font-size: 45px;
-    text-align: center;
+    text-align: left;
     max-width: 1100px;
 }
 
 h2{
     font-size: 40px;
-    text-align: center;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: rgb(76, 158, 158);
 }
 
 p{
-    font-size:20px;
-    text-align: center;
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 footer {
