@@ -197,3 +197,68 @@ footer {
     font-size: 12px;
     text-align: left;
 }
+
+.board {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.board-members {
+    background:rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.board-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.board-info {
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.board-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.6rem;
+    color: #0f172a;
+}
+
+.board-role {
+    color: #1d76cc;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.experience {
+    color: #17508d;
+    font-size: 0.8rem;
+}
+
+.board-description {
+    font-size: 0.88rem;
+    color: #000000;
+    line-height: 1.5;
+}
