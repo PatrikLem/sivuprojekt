@@ -154,7 +154,7 @@ main{
     text-align: center;
     color: white;
 
-    animation: heroBackground 30s infinite ease-in-out;
+    animation: heroBackground 35s infinite ease-in-out;
 }
 
 
@@ -163,19 +163,22 @@ main{
     0%, 100% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu7.jpg');
     }
-    16.66% {
+    14.29% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu9.jpg');
     }
-    33.33% {
+    28.57% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/riggtech.png');
     }
-    50%{
+    42.86%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/seili.jpg');
     }
-    66.66%{
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/fennica.jpg');
+    57.14%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/supermare.jpg');
     }
-    83.33%{
+    71.43%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/ursus.webp');
+    }
+    85.71%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/putkilinjamittaus.jpg');
     }
 }
