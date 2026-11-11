@@ -154,7 +154,7 @@ main{
     text-align: center;
     color: white;
 
-    animation: heroBackground 20s infinite ease-in-out;
+    animation: heroBackground 30s infinite ease-in-out;
 }
 
 
@@ -163,11 +163,20 @@ main{
     0%, 100% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu7.jpg');
     }
-    33% {
+    16.66% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu9.jpg');
     }
-    66% {
+    33.33% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/riggtech.png');
+    }
+    50%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/seili.jpg');
+    }
+    66.66%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/fennica.jpg');
+    }
+    83.33%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/putkilinjamittaus.jpg');
     }
 }
 
