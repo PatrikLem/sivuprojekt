@@ -165,14 +165,13 @@
 }
 
 .tcs{
-    font-size:16px;
+    font-size: 25px;
     font-weight: 400;
     text-align: right;
     margin: 0;
     letter-spacing: 0.5px;
     justify-self: end;
     white-space: nowrap;
-    font-size: 1rem;
     color: #1d76cc;
 }
 
@@ -227,12 +226,13 @@
     border-radius: 6px;
     color: #1d76cc;
     font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
 }
 
 .partner img{
-    width: 60px;
-    height: 32px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
@@ -263,77 +263,85 @@ main{
     text-align: center;
     color: whitesmoke;
 
-    animation: heroBackground 35s infinite ease-in-out;
+    animation: heroBackground 45s infinite ease-in-out;
 }
 
 
 
 @keyframes heroBackground {
     0%, 100% {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu7.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu7.webp');
     }
-    14.29% {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu9.jpg');
+    11.11% {
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu10.webp');
     }
-    28.57% {
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/riggtech.png');
+    22.22% {
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/riggtech.webp');
     }
-    42.86%{
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/seili.jpg');
+    33.33%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/seili.webp');
     }
-    57.14%{
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/supermare.jpg');
+    44.44%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/supermare.webp');
     }
-    71.43%{
+    55.56%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/ursus.webp');
     }
-    85.71%{
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/putkilinjamittaus.jpg');
+    66.67%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/putkilinjamittaus.webp');
+    }
+     77.78%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu11.webp');
+    }
+     88.89%{
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu12.webp');
     }
 }
 
-.main-row{
+.ceo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.ceo-figure{
+    flex: 0 1 500px;
+    margin: 0;
+}
+
+.ceo-figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.ceo-figure figcaption{
+    margin-top: 12px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.ceo-quote{
+    flex: 1 1 400px;
+    margin: 0;
+}
+
+.ceo-quote p{
+    margin: 0 0 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.main-top{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 40px;
-}
-.main-text{
-    justify-content: right;
-    flex: 1 1 320px;
-    color: #333;
-}
-
-.main-text .head{
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 600;
-    color: #2f8f8b;
-    margin: 0 0 16px;
-}
-
-.main-text .mid{
-    line-height: 1.7;
-    max-width: 60ch;
-    margin: 0 0 16px;
-    font-size: 1.2rem;
-    color: #1f1f1f;
-}
-
-.main-text .list{
-    padding-left: 20px;
-    margin: 0 0 16px;
-    line-height: 1.8;
-}
-
-.main-text .list li::marker{
-    color: #2f8f8b;
-}
-
-.main-picture{
-    flex: 1 1 200px;
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
 }
 
 h1{
@@ -361,21 +369,25 @@ footer {
 
 .footer-top{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    
 }
 
 .footer-contact{
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 45px;
 }
 
 .footer-contact-title{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .footer-contact-text{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .copy{
@@ -406,19 +418,25 @@ footer {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
 }
 
 .board-img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 350px;
+    object-position: center bottom;
+    object-fit: contain;
+    display: block;
 }
 
 .board-info {
     padding: 10px;
     font-weight: bold;
-
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .board-info h3 {
@@ -434,6 +452,25 @@ footer {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.linkedin{
+    width:auto;
+    height:40px;
+    border: none;
+    text-decoration: none;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.linkedin img{
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.linkedin:hover {
+    opacity: 0.6;
 }
 
 .experience {
