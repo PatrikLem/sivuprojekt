@@ -1,7 +1,3 @@
-
-
-
-
 .navigation {
     position: fixed;
     top: 0;
@@ -75,16 +71,23 @@
         margin: 5px 0;
     }
 
-    .partners {
+    .partners,
+    .performance,
+    .references {
         width: 80%;
         flex-direction: column;
     }
 
-    .partners-toggle {
+    .partners-toggle,
+    .performance-toggle,
+    .references-toggle {
         width: 100%;
+        margin: 5px 0;
     }
 
-    .partners-menu {
+    .partners-menu,
+    .performance-menu,
+    .references-menu {
         position: static;
         display: none;
         opacity: 1;
@@ -94,16 +97,22 @@
         border: none;
         width: 100%;
     }
-
-    .partners.open .partners-menu {
+    
+    .partners.open .partners-menu,
+    .performance.open .performance-menu,
+    .references.open .references-menu {
         display: block;
     }
-
-    .partners:hover .partners-menu {
+    
+    .partners:hover .partners-menu,
+    .performance:hover .performance-menu,
+    .references:hover .references-menu {
         display: none;
     }
 
-    .partners.open:hover .partners-menu {
+    .partners.open:hover .partners-menu,
+    .performance.open:hover .performance-menu,
+    .references.open:hover .references-menu {
         display: block;
     }
 }
@@ -170,16 +179,18 @@
     align-items: center;
 }
 
-.partners-toggle{
-    font: inherit;
-    color: inherit;
+.partners-toggle,
+.performance-toggle,
+.references-toggle {
+    font-family: inherit;
+    font-size: inherit;
+    color: black;
+    font-weight: 500;
     line-height: normal;
-    font-weight: bold;
-    font-size: 14px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 9px 16px;
+    padding: 8px 12px;
 }
     
 
@@ -229,20 +240,7 @@
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.performance-toggle{
-    font: inherit;
-    color: inherit;
-    line-height: normal;
-    font-weight: bold;
-    font-size: 14px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 9px 16px;
-}
-    
+} 
 
 .performance-menu{
     position: absolute;
@@ -284,18 +282,6 @@
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.references-toggle{
-    font: inherit;
-    color: inherit;
-    line-height: normal;
-    font-weight: bold;
-    font-size: 14px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 9px 16px;
 }
     
 
