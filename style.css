@@ -259,7 +259,7 @@ main{
     text-align: center;
     color: whitesmoke;
 
-    animation: heroBackground 45s infinite ease-in-out;
+    animation: heroBackground 45s infinite step-end;
 }
 
 @keyframes heroBackground {
@@ -273,7 +273,7 @@ main{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/riggtech.webp');
     }
     33.33%{
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/seili.webp');
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu13.png');
     }
     44.44%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/supermare.webp');
@@ -282,10 +282,10 @@ main{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/ursus.webp');
     }
     66.67%{
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/putkilinjamittaus.webp');
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu8.jpg');
     }
      77.78%{
-        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu11.webp');
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/tiimi.png');
     }
      88.89%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu12.webp');
@@ -579,6 +579,9 @@ footer {
 @media (width <= 700px) {
     main {
         padding: 90px 16px 32px;
+    }
+    .hero{
+        min-height: 60svh;
     }
 
     .ceo {
