@@ -30,7 +30,46 @@
     transition: all 0.3s ease;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 700px) {
+    main{
+        padding: 90px 16px 32px;
+    }
+
+    .ceo{
+        padding: 0;
+        gap: 24px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .ceo-figure,
+    .ceo-quote {
+        flex: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .ceo-quote p{
+        font-size: 1rem;
+        line-height: 1.65;
+        margin: 0 0 14px;
+    }
+
+    .ceo-sign{
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    .ceo-figure img{
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+    }
+
     .button {
         display: flex;
         justify-self: end;
