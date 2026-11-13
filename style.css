@@ -236,6 +236,116 @@
     object-fit: contain;
 }
 
+.performance{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.performance-toggle{
+    font: inherit;
+    color: inherit;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 9px 16px;
+}
+    
+
+.performance-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    z-index: 200;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+.performance:hover .performance-menu,
+.performance.open .performance-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.perform{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #1d76cc;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.references{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.references-toggle{
+    font: inherit;
+    color: inherit;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 9px 16px;
+}
+    
+
+.references-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    z-index: 200;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+.references:hover .references-menu,
+.references.open .references-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.refer{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #1d76cc;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 body {
     margin-top: 0;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
