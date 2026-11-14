@@ -313,27 +313,35 @@ main{
 @keyframes heroBackground {
     0%, 100% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu7.webp');
+        background-position: center;
     }
     11.11% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu10.webp');
+        background-position: center top;
     }
     22.22% {
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/riggtech.webp');
+        background-position: center;
     }
     33.33%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu13.png');
+        background-position: center 30%;
     }
     44.44%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/supermare.webp');
+        background-position: center;
     }
     55.56%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/ursus.webp');
+        background-position: center;
     }
     66.67%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu8.jpg');
+        background-position: center;
     }
      77.78%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/tiimi.png');
+        background-position: center top;
     }
      88.89%{
         background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/sisu12.webp');
