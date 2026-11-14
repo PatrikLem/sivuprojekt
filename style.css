@@ -149,6 +149,51 @@
     object-fit: contain;
 }
 
+.partners-page {        /*this is for partners page not the partners dropdown*/
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.partners-page h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: 32px;
+}
+
+.partner-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 32px;
+    align-items: center;
+    padding: 28px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.partner-logo:hover {
+    opacity: 0.7;
+}
+
+.partner-text h2 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    text-align: left;
+    margin: 0 0 8px;
+}
+
+.partner-text p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
 .performance{
     position: relative;
     display: flex;
@@ -159,7 +204,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 240px;
+    min-width: 300px;
     z-index: 200;
     background: #fff;
     border: 1px solid #ddd;
@@ -179,16 +224,27 @@
     transform: translateY(0);
 }
 
-.perform{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 12px;
+.perform,
+.refer {
+    display: block;
+    padding: 10px 14px;
     border-radius: 6px;
     color: #1d76cc;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.3;
     text-decoration: none;
+}
+
+.perform:hover,
+.refer:hover {
+    background: #eef5fc;
+}
+
+.perform:visited,
+.refer:visited {
+    color: #1d76cc;
 }
 
 .references{
@@ -222,19 +278,10 @@
     transform: translateY(0);
 }
 
-.refer{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 12px;
-    border-radius: 6px;
-    color: #1d76cc;
-    font-weight: 600;
-    font-size: 20px;
-    text-decoration: none;
-}
-
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin-top: 0;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     color: #2b2b2b;
@@ -245,6 +292,7 @@ main{
     max-width: none;
     padding: 60px clamp(16px, 5vw, 80px);
     margin: 0; 
+    flex: 1;
 }
 
 .hero {
@@ -331,13 +379,6 @@ main{
     color: #333;
 }
 
-.main-top{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-}
-
 h1{
     font-size: clamp(2rem, 7vw, 3.4rem);
     text-align: center;
@@ -347,7 +388,7 @@ h1{
     line-height: 1.1;
 }
 
-h2{
+.hero h2{
     font-size: clamp(1.3rem, 4vw, 2.5rem);
     text-align: center;
     color: #ffffff;
@@ -448,8 +489,6 @@ footer {
     font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 
 .linkedin{
@@ -480,6 +519,27 @@ footer {
     font-size: 0.88rem;
     color: #000000;
     line-height: 1.5;
+}
+
+.info-page{
+    min-height: 50vh;
+    padding-top: 120px;
+}
+.info-page .ceo-figure {
+    flex: 0 1 340px;
+}
+.info-page .ceo-figure img{
+    max-height: 70vh;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+.info-page .ceo-quote p {
+    font-size: 1.1rem;
+}
+.ceo-sign {
+    font-weight: 600;
 }
 
 @media (width <= 850px) {
@@ -573,6 +633,14 @@ footer {
     .references.open:hover .references-menu {
         display: block;
     }
+    .performance-menu,
+    .references-menu,
+    .partners-menu {
+        padding: 4px 0 8px;
+        margin: 0 0 8px;
+        border-left: 3px solid #1d76cc;
+        background: #f7fafd;
+    }
 }
 
 @media (width <= 700px) {
@@ -618,10 +686,54 @@ footer {
     }
 }
 
-@media (width > 700px) {
+@media (width > 1100px) {
     .ceo-figure {
-        position: sticky;
         top: 100px;
         align-self: flex-start;
+    }
+}
+
+@media (width <= 1100px) {
+    .ceo {
+        padding: 0;
+        gap: 24px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .ceo-figure,
+    .ceo-quote,
+    .info-page .ceo-figure,
+    .info-page .ceo-quote {
+        flex: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .ceo-figure img,
+    .info-page .ceo-figure img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (width <= 700px) {
+    .info-page .ceo-figure img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    }
+
+    footer {
+        padding: 20px 16px;
     }
 }

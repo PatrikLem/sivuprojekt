@@ -7,23 +7,39 @@ button.addEventListener('click', () => {
     button.classList.toggle('open');
 });
 
-const partners = document.querySelector(".partners");
-const toggle = partners.querySelector(".partners-toggle");
+const dropdowns = document.querySelectorAll(".partners, .performance, .references");
 
-toggle.addEventListener("click", (e)=> {
-    e.stopPropagation();
-    const open = partners.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", open);
+dropdowns.forEach((dropdown) => {
+    const toggle = dropdown.querySelector("button");
+
+    toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        // close the other dropdowns first
+        dropdowns.forEach((other) => {
+            if (other !== dropdown) {
+                other.classList.remove("open");
+                other.querySelector("button").setAttribute("aria-expanded", "false");
+            }
+        });
+
+        const isOpen = dropdown.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", isOpen);
+    });
 });
 
-document.addEventListener("click", ()=> {
-    partners.classList.remove("open");
-    toggle.setAttribute("aria-expanded", "false");
+document.addEventListener("click", () => {
+    dropdowns.forEach((dropdown) => {
+        dropdown.classList.remove("open");
+        dropdown.querySelector("button").setAttribute("aria-expanded", "false");
+    });
 });
 
-document.addEventListener("keydown", (e)=> {
+document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-        partners.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
+        dropdowns.forEach((dropdown) => {
+            dropdown.classList.remove("open");
+            dropdown.querySelector("button").setAttribute("aria-expanded", "false");
+        });
     }
 });
